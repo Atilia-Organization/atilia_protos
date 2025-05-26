@@ -47,3 +47,31 @@
 .read-the-docs {
   color: #888;
 }
+
+{/* For mail */}
+@keyframes mailOpen {
+  0%   { 
+    transform: translateY(0);
+    background-image: url('./assets/imgs/state-1.png'); 
+  }
+  25%  { background-image: url('./assets/imgs/state-2.png'); }
+  50%  {
+    transform: translateY(-100px);
+    background-image: url('./assets/imgs/state-3.png'); 
+  }
+  100% { 
+    transform: translateY(-200px);
+    background-image: url('./assets/imgs/state-4.png'); 
+  }
+}
+
+.mail-animation {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./assets/state-1.png"); /* Set initial state */
+  animation: mailOpen 3s ease-in-out forwards;
+  animation-fill-mode: forwards; /* <— ensures it STAYS at 100% keyframe */
+  margin: 0 auto;
+}
