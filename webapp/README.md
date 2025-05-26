@@ -7,3 +7,4 @@
 | `react-dom`     | `^19.1.0` | 
 | `tailwindcss`     | `^4.1.6` |
 # Architecture
+![webapp arch](webapp/Webapp Prototype.drawio)
